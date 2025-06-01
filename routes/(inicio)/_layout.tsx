@@ -4,9 +4,9 @@ import Header from "../../islands/Header.tsx";
 
 export default ({Component}: PageProps) => {
     return (
-        <div>
+        <div class="layout">
             <Header/>
-            <Component/>
+            <main><Component/></main>
             <Footer/>
         </div>
     )
