@@ -4,6 +4,7 @@ const Header:FunctionalComponent = () => {
 
     const borrarCoockie = () => {
         document.cookie = "user=; Path=/; Expires=Thu, 29 May 2025 00:00:00 GMT"
+        document.cookie = "favCharacter=; Path=/; Expires=Thu, 29 May 2025 00:00:00 GMT"
         location.reload() //recarga la página, para activar el middleware
     }
 

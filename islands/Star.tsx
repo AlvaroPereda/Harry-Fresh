@@ -33,13 +33,6 @@ const Star:FunctionalComponent<Data> = (props) => {
     return (
         <div>
             <img src={favoritos ? "con_fondo.svg" : "sin_fondo.svg"} alt="estrella" width={50} onClick={() => addFavorites()}/>
-            <button type="button" onClick={() => {
-                const favCookie = decodeURIComponent(document.cookie).split("; ").find(e => e.startsWith("favCharacter"))
-                console.log(favCookie)
-            }}>Mostrar Cookies</button>
-            <button type="button" onClick={() => {
-                document.cookie = "favCharacter=; Path=/; Expires=Fri, 30 May 2025 00:00:00 GMT"
-            }}>Borrar Cookie fav</button>
         </div>
     )
 }
